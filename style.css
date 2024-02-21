@@ -1,0 +1,238 @@
+body{
+    font-family: Helvetica;
+    font-size: 22px;
+    color:rgba(68, 64, 60, 0.9);
+    background-color: rgb(226, 214, 230);
+    opacity: 0.9;
+    text-align: center;
+
+}
+h2{ 
+    color:  rgba(68, 64, 60, 0.9);
+}
+
+header{
+    position: fixed;
+    border-bottom: 1px solid seashell;    
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    align-items: center;
+    height: 69px;
+    background-color: white;
+    top:0;
+
+}
+
+#logo {
+    max-height: 50px;
+    min-width: 100px;
+    margin-left: 10px;
+  
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+  padding-bottom: 1.5%;
+
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a {
+    color: rgb(49, 128, 180);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 25px;
+ 
+
+}
+
+nav ul li a:hover {
+    color: green;
+    transition: .2s;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+ 
+    position: relative;
+ align-items: center;
+  
+    top:70px;
+    z-index: -1;
+    
+    
+}
+.banner {
+    background-image: url(./Images/423735779_316873974692418_408337515937892062_n.jpg);
+    width:1200px;
+    position: relative;
+    height:700px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+  
+}
+ .banner-content{
+    position: relative;
+    background-color: rgb(202, 81, 148);  
+    display: flex;
+    flex-direction: column;
+    justify-content: center ; 
+    width:100%;
+    color:aquamarine;
+    
+}
+ .banner-content h4{
+    margin-top: -6px;
+
+}
+.tea-product{
+    margin-top: 40px;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tea-name{
+  
+    width:100%;
+    display: flex;   
+    flex-direction: column;
+  
+
+}
+
+.tea-items img {
+    margin-top: -30px;
+    width: 300px;
+    height: 200px;
+    margin-right: -40px;
+    
+
+}
+
+.line1{
+
+    display: flex;
+    flex-direction: row;
+}
+
+.line2{
+   margin-top: -10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+}
+
+figure{
+     
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+   
+}
+.location{
+    background-image: url(./Images/img-locations-background.jpg);
+    display: flex;
+    flex-direction: column;
+    height:500px;
+    justify-content: center;
+    width: 1200px;
+    color:antiquewhite;
+   
+  
+}
+
+.address{
+    display: flex;
+    justify-content: center;
+    
+  
+   
+}
+.address-box{
+    background-color: rgb(146, 84, 146);
+    width:300px;
+  margin:15px 20px;
+   
+   
+   
+}
+.contact{
+    height:200px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+footer{
+    position: relative;
+    text-align: left;
+    left:20px;
+    top:70px;
+    display: flex;
+    align-items: center;
+    height:60px;
+    
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        font-size: 18px;
+    }
+
+    nav ul li {
+        padding: 5px 5px;
+        /* Adjust padding for smaller screens */
+    }
+
+    nav ul li a {
+        font-size: 12px;
+        /* Adjust font size for smaller screens */
+    }
+
+    .banner {
+        height: 300px;
+        /* Adjust height for smaller screens */
+    }
+
+    .banner-content,
+    .tea-product {
+        width: 100%;
+        /* Full width for smaller screens */
+    }
+
+    .address-box {
+        width: 100%;
+        /* Full width for smaller screens */
+    }
+    .line1, .line2, .address{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .location{
+        margin-top: 35%;
+        margin-bottom: 40%;
+    }
+    .tea-items{
+        display: flex;
+        flex-direction: column;
+    }
+    .tea-items h4{
+      text-align: left;
+    }
+    }
